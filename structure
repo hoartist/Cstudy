@@ -1,4 +1,18 @@
-##[C] 구조체 메모리 크기(Struct Memory)
+## [C] 구조체 메모리 크기(Struct Memory)
 
 
 - char :1바이트
+- int :4바이트
+- double :8바이트
+
+sizeof 메소드를 통해 해당사이즈의 변수르 알수 있음
+
+Code
+
+typedef struct student{
+char a;
+int b ;
+}S;
+
+void main(){
+printf("메모리의 크기 :%d\n",sizeof(S));
